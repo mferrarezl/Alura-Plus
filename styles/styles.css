@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --cor-primaria: #FFFFFF;
+    --cor-secundaria: #167BF7;
+    --cor-terciaria: #C0C0C0;
+    --cor-background: #00030C;
+    --cor-hover-botao: #74acf0;
+    
+    --fonte-primaria: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-background);
+    color: var(--cor-primaria);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--fonte-primaria);
+}
+
+.principal {
+    background-image: url("/assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.botao__secundario {
+    background-color: transparent;
+    border: 1px solid var(--cor-primaria);
+    margin-bottom: 0.7em;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__aviso {
+    color: var(--cor-terciaria);
+    font-size: 12px;
+}
+
+.container__imagem {
+    margin: 1em 0 2.8em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__subtitulo {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+}
+
+.container__texto {
+    color: var(--cor-terciaria);
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem {
+    width: 90%;
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--cor-primaria);
+}
+
+.rodape {
+    text-align: center;
+    margin: 9em 7.5em 2em 7.5em;
+}
+
+.rodape__logo {
+    margin-bottom: 2.5em;
+}
+
+.rodape__lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.lista__links {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+.rodape__texto {
+    font-size: 14px;
+    color: var(--cor-terciaria);
+    margin: 1.5em;
+}
+
+.lista__links:hover {
+    color: var(--cor-secundaria);
+}
+
+.container__botao:hover {
+    box-shadow: 0.1em 0.1em var(--cor-hover-botao);
+    cursor: pointer;
+}
